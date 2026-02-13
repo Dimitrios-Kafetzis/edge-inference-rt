@@ -1,0 +1,26 @@
+# Rust build artifacts
+/target/
+**/*.rs.bk
+
+# Cargo lock for library crates (keep for binary)
+# Cargo.lock is included for reproducible builds
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Models (large files — download separately)
+/models/
+
+# Profiling
+*.prof
+perf.data
+perf.data.old
+flamegraph.svg
