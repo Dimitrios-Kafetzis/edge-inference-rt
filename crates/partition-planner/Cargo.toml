@@ -1,0 +1,27 @@
+# Copyright (c) 2025 Dimitris Kafetzis
+#
+# Licensed under the MIT License.
+# See LICENSE file in the project root for full license information.
+#
+# SPDX-License-Identifier: MIT
+
+[package]
+name = "partition-planner"
+description = "Strategy engine for partitioning transformer models under memory constraints"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+model-ir = { path = "../model-ir" }
+memory-manager = { path = "../memory-manager" }
+resource-monitor = { path = "../resource-monitor" }
+tensor-core = { path = "../tensor-core" }
+thiserror.workspace = true
+tracing.workspace = true
+serde.workspace = true
+
+[dev-dependencies]
+# proptest.workspace = true  # Uncomment for Rust 1.80+
