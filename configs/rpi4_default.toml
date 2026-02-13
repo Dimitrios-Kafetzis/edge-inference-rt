@@ -1,0 +1,21 @@
+# Copyright (c) 2025 Dimitris Kafetzis
+#
+# Licensed under the MIT License.
+# See LICENSE file in the project root for full license information.
+#
+# SPDX-License-Identifier: MIT
+
+# edge-inference-rt configuration: RPi 4 Default
+#
+# Balanced settings for a Raspberry Pi 4 Model B (4 GB).
+# Uses greedy grouping to minimize weight-loading rounds while
+# staying well within the 4 GB memory envelope.
+#
+# Usage: edge-rt run -c configs/rpi4_default.toml --prompt "Hello"
+
+model_path = "./models/gpt2-small"
+memory_budget = "512M"
+strategy = "greedy-grouping"
+num_threads = 4
+prefetch_ratio = 0.2
+enable_profiling = true

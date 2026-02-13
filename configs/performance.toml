@@ -1,0 +1,21 @@
+# Copyright (c) 2025 Dimitris Kafetzis
+#
+# Licensed under the MIT License.
+# See LICENSE file in the project root for full license information.
+#
+# SPDX-License-Identifier: MIT
+
+# edge-inference-rt configuration: Performance (speculative prefetch)
+#
+# Aggressive settings for when memory headroom is plentiful.
+# Reserves 20% of budget for speculative weight prefetching,
+# overlapping I/O with computation to reduce wall-clock latency.
+#
+# Usage: edge-rt run -c configs/performance.toml --prompt "Hello"
+
+model_path = "./models/gpt2-small"
+memory_budget = "1G"
+strategy = "speculative-prefetch"
+num_threads = 4
+prefetch_ratio = 0.2
+enable_profiling = true
