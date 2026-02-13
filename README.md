@@ -6,7 +6,7 @@
 
 A modular, memory-aware runtime for partitioned transformer inference on resource-constrained edge devices, written in Rust.
 
-[![CI](https://github.com/YOUR_USERNAME/edge-inference-rt/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/edge-inference-rt/actions/workflows/ci.yml)
+[![CI](https://github.com/Dimitrios-Kafetzis/edge-inference-rt/actions/workflows/ci.yml/badge.svg)](https://github.com/Dimitrios-Kafetzis/edge-inference-rt/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Rust: 1.75+](https://img.shields.io/badge/Rust-1.75+-orange.svg)](https://www.rust-lang.org/)
 
