@@ -1,0 +1,25 @@
+# Copyright (c) 2025 Dimitris Kafetzis
+#
+# Licensed under the MIT License.
+# See LICENSE file in the project root for full license information.
+#
+# SPDX-License-Identifier: MIT
+
+[package]
+name = "memory-manager"
+description = "Arena-based tensor buffer allocator with hard memory budget enforcement"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+tensor-core = { path = "../tensor-core" }
+thiserror.workspace = true
+tracing.workspace = true
+serde.workspace = true
+
+[dev-dependencies]
+serde_json = { workspace = true }
+# proptest.workspace = true  # Uncomment for Rust 1.80+
