@@ -1,0 +1,27 @@
+# Copyright (c) 2025 Dimitris Kafetzis
+#
+# Licensed under the MIT License.
+# See LICENSE file in the project root for full license information.
+#
+# SPDX-License-Identifier: MIT
+
+[package]
+name = "tensor-core"
+description = "Lightweight tensor types and operations for edge inference, with optional ARM NEON optimizations"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+thiserror.workspace = true
+serde.workspace = true
+ndarray.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+# proptest and criterion require newer Rust toolchain for transitive deps.
+# Uncomment when using Rust 1.80+.
+# proptest.workspace = true
+# criterion.workspace = true
