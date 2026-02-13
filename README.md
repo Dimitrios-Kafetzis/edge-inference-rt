@@ -6,7 +6,6 @@
 
 A modular, memory-aware runtime for partitioned transformer inference on resource-constrained edge devices, written in Rust.
 
-[![CI](https://github.com/Dimitrios-Kafetzis/edge-inference-rt/actions/workflows/ci.yml/badge.svg)](https://github.com/Dimitrios-Kafetzis/edge-inference-rt/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Rust: 1.75+](https://img.shields.io/badge/Rust-1.75+-orange.svg)](https://www.rust-lang.org/)
 
@@ -24,7 +23,7 @@ The project is designed as a portfolio demonstration of idiomatic Rust for embed
 │              (run · benchmark · inspect · status)               │
 ├─────────────────────────────────────────────────────────────────┤
 │                          runtime                                │
-│     InferenceEngine<Idle> → <Planned> → <Ready> → run()        │
+│      InferenceEngine<Idle> → <Planned> → <Ready> → run()        │
 ├──────────────┬──────────────────┬───────────────────────────────┤
 │  partition-  │  memory-manager  │  resource-monitor             │
 │  planner     │  MemoryPool +    │  CPU · Memory · Thermal       │
@@ -101,7 +100,7 @@ edge-rt status
 $ edge-rt benchmark --model ./synth --sweep-memory 256M,512M,1G
 
 ╔══════════════════════════════════════════════════════╗
-║           edge-rt · Benchmark Suite                 ║
+║               edge-rt · Benchmark Suite              ║
 ╚══════════════════════════════════════════════════════╝
 
   Strategy                 Budget   Groups    Peak MB    Latency    Compute    Tok/s
