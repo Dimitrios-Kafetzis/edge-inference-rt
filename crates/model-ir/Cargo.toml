@@ -1,0 +1,27 @@
+# Copyright (c) 2025 Dimitris Kafetzis
+#
+# Licensed under the MIT License.
+# See LICENSE file in the project root for full license information.
+#
+# SPDX-License-Identifier: MIT
+
+[package]
+name = "model-ir"
+description = "Lightweight intermediate representation for transformer models with SafeTensors loading"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+tensor-core = { path = "../tensor-core" }
+thiserror.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+safetensors.workspace = true
+memmap2.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+# proptest.workspace = true  # Uncomment for Rust 1.80+
